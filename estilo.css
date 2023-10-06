@@ -1,0 +1,311 @@
+body{
+	display: grid;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background-image: url(img/fundo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+}
+
+/*index*/
+
+ul{
+	list-style-type: space-counter;
+}
+
+li{
+	font-size: 160%;
+	display: inline-block;
+	margin: 15px;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.header{
+	width: 100%;
+	padding: 5% 1%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.footer{
+	width: 100%;
+    height: 1%;
+    text-align: center;
+    flex-wrap: wrap;
+    color: #f2f2f2;
+	margin-top: 1%;
+	margin-bottom: 7%;
+}
+
+.banner h1{
+	font-size: 500%;
+	align-items: center;
+	margin-right: 100%;
+	margin: 0;
+    position: absoulute;
+    padding-top: 65%;
+	padding-bottom: 10%;
+}
+
+/*Fim index*/
+
+/*Início Sobre e Modelos*/
+
+.container {
+	margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-bottom: 2%;
+    margin-top: 15%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-align: justify;
+    color: #000;
+	font-size: 16px;
+	background-color: #fff;
+}
+
+.container p {
+	font-family: roboto;
+	font-size: 130%;
+	font-color: black;
+}
+
+.container img{
+	margin: auto;
+	display: block;
+}
+
+#title{
+	font-family: berlin sans fb;
+	font-size: 250%;
+	font-color: black;
+}
+
+.texto-hover {
+    opacity: 0;
+    transition: 1s ease-in-out;
+    
+}
+
+.texto-hover:hover {
+    opacity: 1;
+}
+
+/*Fim Sobre*/
+
+/*Início Contato e Obrigado*/
+
+.cont{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 45%;
+	margin-bottom: 5%;
+	padding-top: 5px;
+	padding-bottom: 5%;
+	background: #1c1c1c;
+	width: 100%;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.cont h2{
+	color: white;
+	font-size: 200%;
+	margin: 2rem;
+}
+
+.cont form{
+	display: flex;
+	flex-direction: column;
+}
+
+form label{
+	color: white;
+	font-size: 110%;
+	padding: 2%;
+}
+
+form input{
+	margin: 1%;
+	padding: 1.5%;
+	outline: none;
+	border: 0;
+	font-size: 80%;
+	transition: all 0.7s;
+}
+
+form input:focus{
+	border-radius: 4%;
+}
+
+form label span{
+	color: red;
+	font-size: 70%;
+	padding: 2%;
+	letter-spacing: 0.5px;
+}
+
+form textarea{
+	resize: none;
+	outline: none;
+	border: 0;
+	transition: all 0.7s;
+}
+
+form textarea:focus{
+	border-radius: 4%
+}
+
+form button{
+	padding: 2.5%;
+	background: transparent;
+	font-size: 80%;
+	color: white;
+	border: 2px solid;
+	border-color: white;
+	transition: all 1s;
+}
+
+form button:hover{
+	background: white;
+	color: black;
+	border-radius: 4%;
+	transition: all 1s;
+}
+
+/*Fim Contato*/
+
+.main{
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.obrig{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 45%;
+	margin-bottom: 5%;
+	padding-top: 5px;
+	padding-bottom: 5%;
+	padding-left: 20%;
+	padding-right: 20%;
+	background: #1c1c1c;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.princ{
+	color: white;
+	font-size: 220%;
+	font-family: berlin sans fb;
+	margin-bottom: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.sec{
+	color: silver;
+	font-size: 120%;
+	font-family: roboto;
+}
+
+/*Fim Contato e Obrigado*/
+
+/*Responsividade*/
+
+@media screen and (max-width: 896px){
+	.container{
+		display: block;
+	}
+	
+	.banner h1{
+	margin-left: 4%;
+	margin-top: 0.5%;
+	margin-bottom: 12%;
+	padding-top: 100%;
+	font-size: 400%;
+	}
+	
+	li{
+		margin-left: 1px;
+		margin-right: 1px;
+	}
+	
+	.contato img{
+		margin-left: 99%;
+	}
+	
+	.footer{
+		margin-left: 2%;
+		margin-bottom: 9%;
+	}
+	
+   .container{
+	   margin-left: 9%;
+	   margin-right: 7%;
+	   margin-top: 30%;
+   }
+   .container img{
+	   width: 100%;
+   }
+   
+   .container p{
+	   font-size: 140%;
+	   letter-spacing: 1px;
+   }
+   
+   #title{
+	   font-size: 200%;
+   }
+   
+   .cont{
+	   width: 90%;
+	   margin-left: 6%;
+	   margin-right: 6%;
+   }
+   
+   form input{
+	   width: 75%;
+	   margin-left: 12%;
+   }
+   
+   form textarea{
+	   width: 75%;
+	   margin-left: 12%;
+   }
+   
+   form button{
+	   width: 75%;
+	   margin-left: 12%;
+   }
+   
+   form label{
+	   margin-left: 10%;
+   }
+
+}
+
+/*Fim da Responsividade*/

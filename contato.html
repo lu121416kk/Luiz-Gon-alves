@@ -1,0 +1,53 @@
+<!DOCTYPE hmtl>
+<html lang = "pt-br">
+	<head>
+		<title> Conte sua Experiência  </title>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, inicial-scale=1"/> 
+		<link rel = "icon"  type = "image/jpg" href = "img/icon_c.png"/>
+		<link rel = "stylesheet" type = "text/css" href = "estilo.css"> 
+	</head>
+	<body bgcolor = "black">
+		<div class = "header">
+			<div class = "container1">
+				<div class = "flex">
+					<a href = "index.html"> <img id = "logo" src = "img/icon.png" width = "100%"> </a>
+					<div class = "nav">
+						<ul>
+							<li> <a href = "sobre.html"> Sobre </a> </li>
+							<li> <a href = "esptec.html"> Modelos </a> </li>
+						</ul>
+					</div>
+					<div class = "contato">
+						<a href = "contato.html"> <img id = "conta" src = "img/cont.png" width = "100%"> </a>  
+					</div>
+				</div>  
+			</div>
+		</div>
+		<div class = "cont">
+			<h2> Contate-nos </h2>
+			<form action = "obrigado.html" method = "post">
+				<label> Nome <span> * Obrigatório </span> </label>
+				<input type = "text" name = "name" placeholder = "Exemplo: Roberto Carlos" autocomplete = "off" required minlength = "5">
+				<label> E-mail <span> * Obrigatório </span> </label>
+				<input type = "email" name = "email" placeholder = "Exemplo: carlosroberto@gmail.com" autocomplete = "off" required minlength = "10">
+				<label> Telefone <span> * Obrigatório </span> </label>
+				<input type = "tel" name = "fone" placeholder = "Exemplo: (19) 9 999-99999" autocomplete = "off" required minlength = "16" maxlength = "16">
+				<label> Mensagem </label>
+				<textarea name = "textarea" cols = "50" rows = "10" placeholder = "Deixe sua mensagem">  </textarea> <br>
+				<button type = "submit"> Enviar </button>
+				<input type = "hidden" name = "redirect">
+			</form>
+		</div>
+		<div class = "footer">
+			<p width = "1000%" align = "right">
+                <a href ="#"> 
+                    <img src ="img/seta.png" width="4%"> 
+                </a> 
+            </p>
+			<p> 
+				Luiz Gonçalves 2023 - &copyTodos os direitos reservados
+			</p>
+		</div>
+	</body>
+</html>
